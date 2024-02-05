@@ -1,0 +1,62 @@
+body{
+    height: 100vh;
+    background-color: #000;
+    background-image: url(./../../assets/img/pexels-simon-rizzi-1809644.jpg);
+    background-size: cover;
+    background-position: center;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+a:hover{
+    color: blueviolet;
+}
+header{
+position: relative;
+padding: 0 2rem;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+ 
+.action_btn{
+    background-color: darkgray;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.action_btn :hover{
+    scale: 1.0s;
+    color: #fff;
+}
+
+.action_btn :active{
+    scale: 0.9s;
+}
