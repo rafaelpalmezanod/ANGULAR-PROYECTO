@@ -37,15 +37,16 @@ body{
     
     display: inline-block;
 }
-.footer-links ul li a{
+.footer-links li{
     font-size: 18px;
     text-decoration: none;
     color: #bbbbbb;
     display: block;
     margin-bottom: 15px;
     transition: all.3s ease;
+    cursor: pointer;
 }
-.footer-links ul li a:hover{
+.footer-links li:hover{
     color: #ffff;
     padding-left: 6px;
 }
