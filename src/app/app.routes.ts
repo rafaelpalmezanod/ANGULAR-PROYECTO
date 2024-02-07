@@ -4,8 +4,9 @@ import { ContactComponent } from './contact/contact.component';
 import {MainComponent} from './main/main.component'
 
 export const routes: Routes = [
+    {path:'',redirectTo:'main',pathMatch:'full'},
     { path:'about' , component: AboutComponent},
     { path:'contact' , component: ContactComponent},
-    { path:'home', component: MainComponent},
+    { path:'main', component: MainComponent},
    
 ];

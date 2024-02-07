@@ -1,0 +1,14 @@
+
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid ;
+}
+.cont-left{
+    border: solid 1px red;
+}
+.cont-right{
+    border: solid 1px yellow;
+}
