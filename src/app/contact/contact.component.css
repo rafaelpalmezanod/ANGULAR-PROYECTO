@@ -1,14 +1,97 @@
-
-
-.contenedor{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(90deg,#0e3959 0%,#0e3959 30%,#03a9f5 30%,#03a9f5 100%);
+}
+.contactUs{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.contactUs .title{
+    color: #fff;
+    font-weight: 500px;
+}
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+}
+.contact{
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15) ;
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: "form info" "form map";
+    gap: 20px;
+    margin-top: 20px;
+}
+.contact h3{
+    color: #0e3959;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.formBox{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50{
     display: flex;
-    justify-content: center;
-    text-align: center;
-    border: 1px solid ;
+    gap: 20px;
 }
-.cont-left{
-    border: solid 1px red;
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;  
 }
-.cont-right{
-    border: solid 1px yellow;
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+.inputBox samp{
+    color: #18b7ff;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1rem;
+    outline: none;
+    border: 1px solid #333;
+}
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1rem;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+.inputBox input[type="submit"]{
+    background: blueviolet;
+    color: #fff;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.inputBox ::placeholder{
+    color: #999;
 }
