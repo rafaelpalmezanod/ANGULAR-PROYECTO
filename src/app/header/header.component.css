@@ -5,7 +5,7 @@
 }
 
 body{
-    height: 60vh;
+    height: 40vh;
     background-color: #000;
     background-image: url(./../../assets/img/pexels-simon-rizzi-1809644.jpg);
     background-size: cover;
@@ -22,6 +22,7 @@ a{
 }
 a:hover{
     color: blueviolet;
+    
 }
 header{
 position: relative;
@@ -57,13 +58,10 @@ padding: 0 2rem;
     font-size: 0.8rem;
     font-weight: bold;
     cursor: pointer;
-    transition: scale 0.2 ease;
+    transition: 0.5s ease;
 }
 .action_btn :hover{
-    scale: 1.0s;
-    color: #fff;
+    scale: 1.5;
 }
 
-.action_btn :active{
-    scale: 0.9s;
-}
+
