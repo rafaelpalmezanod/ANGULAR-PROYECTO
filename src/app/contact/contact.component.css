@@ -96,10 +96,50 @@ body{
 .inputBox ::placeholder{
     color: #999;
 }
-.map{
-    padding: 0;
+.info{
+    background: #0e3959;
 }
-.map iframe{
-    width: 100%;
-    height: 100%;
+.info h3{
+    color: #fff;
+}
+.info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom:  10px;
+}
+.info .infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+ p{
+    color: #fff;
+    font-size: 1.1em;
+
+}
+.info .infoBox div a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.sic{
+    margin-top: 40px;
+    display: flex;
+}
+.sic li{
+    list-style: none;
+    margin-right: 15px;
+}
+ a{
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+
 }

@@ -6,34 +6,30 @@
         <div class="box">
             <div class="contact form">
                 <h3>Menssage</h3>
-                <form action="">
+                <form [formGroup]="Formulario" (ngSubmit)="onSubmit()">
                    <div class="formBox">
                         <div class="row50">
                             <div class="inputBox">
                                 <samp>First Name</samp>
-                                <input type="text" placeholder="Rafael">
+                                <input type="text" placeholder="Rafael" formControlName="nombre" name="nombre">
+                                <div *ngIf="contactForm.get('nombre').touched && contactForm.get('nombre').invalid" class="alert">El nombre es obligatorio</div>
                             </div>
                             <div class="inputBox">
                                 <samp>Last Name</samp>
-                                <input type="text" placeholder="Palmezano">
+                                <input type="text" placeholder="Palmezano" formControlName="apellido">
                             </div>
                         </div>
 
                         <div class="row50">
                             <div class="inputBox">
                                 <samp>First Email</samp>
-                                <input type="text" placeholder="Rafaelpalmezano@gmail.com">
+                                <input type="email" placeholder="Rafaelpalmezano@gmail.com" formControlName="email">
+                                <div *ngIf="contactForm.get('email').touched && contactForm.get('email').invalid" class="alert">El email es obligatorio y debe ser válido</div>
                             </div>
                             <div class="inputBox">
                                 <samp>Mobil</samp>
-                                <input type="text" placeholder="+53 300 245 147">
-                            </div>
-                        </div>
-
-                        <div class="row100">
-                            <div class="inputBox">
-                                <samp>Message</samp>
-                                <textarea placeholder="Write your message here..."></textarea>
+                                <input type="text" placeholder="+53 300 245 147" formControlName="telefono">
+                                <div *ngIf="contactForm.get('telefono').touched && contactForm.get('telefono').invalid" class="alert">El teléfono es obligatorio</div>
                             </div>
                         </div>
 
@@ -42,8 +38,6 @@
                                 <input type="submit" value="Send">
                             </div>
                         </div>
-
-
                     </div> 
                 </form>
             </div>
@@ -51,17 +45,25 @@
                 <h3>Contact Info</h3>
                 <div class="infoBox">
                     <div>
-                        <samp ><i class="fa fa-map-marker" aria-hidden="true"></i></samp>
+                        <span ><i class="fa fa-map-marker" aria-hidden="true"></i></span>
                         <p>San Juan dek Cesar <br>LA GUAJIRA</p>
                     </div>
                     <div>
-                        <samp><i class="fa fa-envelope" aria-hidden="true"></i></samp>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
                         <p >Email: </p>
                     </div>
                     <div>
-                        <samp><i class="fa fa-phone" aria-hidden="true"></i></samp>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
                         <p>Telefono:</p>
                     </div>
+
+                    <ul class="sci">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+                    </ul>
                 </div>
             </div>
         </div>
